@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sneakers</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <!-- Google Fonts -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="full-gall">
+      <img class="close-full-gall" src="images/icon-close.svg" alt="" />
+    </div>
+    <span class="overlay"></span>
+    <nav>
+      <img class="menu" src="images/icon-menu.svg" alt="" />
+      <a href="#"><img src="images/logo.svg" alt="" /></a>
+      <ul class="links">
+        <img src="images/icon-close.svg" alt="" class="close" />
+        <li><a href="#">Collection</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="right">
+        <a href="#" class="cart">
+          <div class="items-count"></div>
+          <img src="images/icon-cart.svg" alt="" />
+          <div class="in-cart">
+            <div class="header">Cart</div>
+            <div class="conatiner">
+              <p class="empty-par">Your cart is empty.</p>
+            </div>
+          </div>
+        </a>
+        <a href="#"><img class="ava" src="images/image-avatar.png" alt="" /></a>
+      </div>
+    </nav>
+    <div class="shopping">
+      <div class="review">
+        <div class="screen">
+          <span class="full-scr" id="full-src-spn"></span>
+          <div class="images">
+            <img class="full-img" src="images/image-product-1.jpg" alt="" />
+            <img src="images/image-product-2.jpg" alt="" />
+            <img src="images/image-product-3.jpg" alt="" />
+            <img src="images/image-product-4.jpg" alt="" />
+          </div>
+          <button class="next" onclick="next()"
+            ><img src="images/icon-next.svg" alt=""
+          /></button>
+          <button class="prev" onclick="prev()"
+            ><img src="images/icon-previous.svg" alt=""
+          /></button>
+        </div>
+        <div class="switcher">
+          <div class="box active">
+            <img src="images/image-product-1-thumbnail.jpg" alt="" />
+          </div>
+          <div class="box">
+            <img src="images/image-product-2-thumbnail.jpg" alt="" />
+          </div>
+          <div class="box">
+            <img src="images/image-product-3-thumbnail.jpg" alt="" />
+          </div>
+          <div class="box">
+            <img src="images/image-product-4-thumbnail.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="purchase">
+        <div class="text">
+          <span class="company">sneakers company</span>
+          <h2 class="header">fall limited edition sneakers</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
+            voluptate corporis tempora et maxime ab voluptatem temporibus ad
+            provident architecto at.
+          </p>
+        </div>
+        <div class="cost">
+          <h3 class="curr">$125.00</h3>
+          <span class="old">$250.00</span>
+        </div>
+        <div class="add-to-cart">
+          <div class="amount">
+            <div class="minus symb" id="dec">
+              <img src="images/icon-minus.svg" alt="" />
+            </div>
+            <div class="num">0</div>
+            <div class="plus symb" id="inc">
+              <img src="images/icon-plus.svg" alt="" />
+            </div>
+          </div>
+          <div class="click-to-add" id="finish">
+            <img src="images/icon-cart.svg" alt="" />
+            add to cart
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+@mixin centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin toUpperCase {
+  text-transform: uppercase;
+}
+
+@mixin circle($size) {
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+}
+
+
+
+@mixin breakpoint($point) {
+  @if $point == "small" {
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if $point == "mediumd" {
+    @media (min-width: 992px) {
+      @content;
+    }
+  } @else if $point == "large" {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+}
